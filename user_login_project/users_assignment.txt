@@ -1,0 +1,16 @@
+rails new user_login_project
+cd user_login_project
+add Hirb  Gemfile and save
+start server: rails s
+start console: rails c
+at console prompt:
+-create model:
+> rails g model User first_name:string last_name:string email:string age:integer
+- create records:
+user1 = User.new
+user1.[:first_name="Mitchell"]
+user1.[:last_name="Blank"]
+user1.[:email="mitchellblank@sbcglobal.net"]
+user1.[:age=61
+
+user2 =User.new(first_name:"Derby", last_name:"Strom", age:11, email:dNMe@ananda.net") 
