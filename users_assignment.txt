@@ -1,0 +1,29 @@
+from bash/terminal (in iTerm) prompt:
+- create new rails project
+rails new user_login_project
+- cd into main project directory
+cd user_login_project
+-open atom in current directory
+atom .
+add Hirb in Gemfile and save
+-start server:
+rails s
+
+start new terminal session in iTerm and
+-create model:
+ rails g model User first_name:string last_name:string email:string age:integer
+
+-start console: rails c
+at console prompt:
+- create records:
+user1 = User.new
+user1[:first_name] = "Mitchell"
+user1[:last_name] = "Blank"
+user1[:email] = "mitchellblank@sbcglobal.net"
+user1.[:age] = 61
+
+user2 = User.new(first_name:"Derby", last_name:"Strom", age:11, email:"dNMe@ananda.net")
+
+user3 = User.new(first_name:"fn3", last_name:"ln3", age:3 email:"em3@em.com")
+
+user4 = User.new(first_name:"fn4", last_name:"ln4", age:4, email:"em4@em.com")
