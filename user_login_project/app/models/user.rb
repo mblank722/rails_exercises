@@ -3,9 +3,9 @@ class User < ApplicationRecord
 
   validates :first_name, :last_name,  presence: true, length: { minimum: 2 , maximum: 255 }
 
-  validates :email, presence: true, uniqueness: { case_sensitive: false }, format: { with: EMAIL_REGEX }, length: { maximum: 255 },
+  validates :email, presence: true, uniqueness: { case_sensitive: false }, format: { with: EMAIL_REGEX }, length: { maximum: 255 }
 
 
-  validates :age,  numericality: { less_than_or_equal_to: 7,  greater_than_or_equal_to: 1 }
+  validates :age,  numericality: { less_than_or_equal_to: 7,  greater_than_or_equal_to: 1 , integer_only: true}
   # validates_numericality_of :age, greater_than_or_equal_to: 10, less_than: 150
 end
