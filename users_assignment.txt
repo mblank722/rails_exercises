@@ -29,10 +29,10 @@ rails g model User()
 
 - create records:
 user1 = User.new
-user1[:first_name] = "Mitchell"
-user1[:last_name] = "Blank"
-user1[:email] = "mitchellblank@sbcglobal.net"
-user1.[:age] = 61
+user1[:first_name] = "Mitchell";
+user1[:last_name] = "Blank";
+user1[:email] = "mitchellblank@sbcglobal.net";
+user1[:age] = 61
 
 user2 = User.new(first_name:"Derby", last_name:"Strom", age:11, email:"dNMe@ananda.net")
 
