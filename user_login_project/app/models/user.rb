@@ -3,6 +3,8 @@ class User < ApplicationRecord
 
   validates :first_name, presence: true#, length: {in 2..255}, case_sensitive: true
 
+  validates :first_name, length: {in 2..255} #case_sensitive: true
+
   # validates :email,  :email, presence: true, uniqueness: { case_sensitive: false }, format: { with: EMAIL_REGEX }
   #
   # validates :age,  presence:true
