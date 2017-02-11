@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   EMAIL_REGEX = /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]+)\z/i
 
-  validates :first_name, Last_name:,  presence: true, length: { minimum: 2 }
+  validates :first_name, :last_name,  presence: true, length: { minimum: 2 }
   # validates :first_name, :last_name, length: { minimum: 2 }
   # validates :first_name, length: { maximum: 255 }
 
