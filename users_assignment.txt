@@ -5,11 +5,13 @@ rails new user_login_project
 cd user_login_project
 -open atom in current directory
 atom .
+-add Hirb
 add Hirb in Gemfile and save
+run at bash atom console:bundle install
 -start server in iTerm
 rails s
 
-start new terminal session in atom and
+start new bash terminal session (in atom) and
 -create model:
  rails g model User first_name:string last_name:string email:string age:integer
 
