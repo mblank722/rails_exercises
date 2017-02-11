@@ -1,4 +1,4 @@
-class User < ApplicationRecord::Base
+class User < ApplicationRecord
   EMAIL_REGEX = /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]+)\z/i
 
   #validates :first_name, presence: true
