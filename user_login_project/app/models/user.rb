@@ -3,8 +3,8 @@ class User < ApplicationRecord
 
   #validates :first_name, presence: true
   validates :first_name, length: { minimum: 2 }
+  validates :first_name, length: { maximum: 255 }
 
-  validates :first_name, case_sensitive: true
 
   #validates :first_name, length: { in 2..255 } #case_sensitive: true
 
