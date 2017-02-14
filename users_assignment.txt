@@ -1,3 +1,14 @@
+General notes:
+after changes to DB: console: reload!
+
+prior to .save of model instances:
+.valid? - check if model instance is valid, prior to save
+.save  save from model to db
+.new_record - if hasn't been saved
+
++++++++++++++++++++++++++++++
+
+
 from bash/terminal (in iTerm) prompt:
 - create new rails project
 rails new user_login_project
@@ -9,7 +20,7 @@ atom .
 add:  gem 'hirb' in Gemfile and save
 cd project folder
 install Hirb: bundle install
-? Hirb enable?
+
 
 
 -start server in iTerm
@@ -19,13 +30,14 @@ start new bash terminal session (in atom) and
 -create model:
  rails g model User first_name:string last_name:string email:string age:integer
 
+-migrate model
+ rails db:migrate
 -start console  in iTerm : rails c
 
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 at console prompt:
-- create User model
-rails g model User()
+Hirb.enable
 
 - create records:
 user1 = User.new
@@ -36,6 +48,55 @@ user1[:age] = 61
 
 user2 = User.new(first_name:"Derby", last_name:"Strom", age:11, email:"dNMe@ananda.net")
 
-user3 = User.new(first_name:"fn3", last_name:"ln3", age:3 email:"em3@em.com")
+user3 = User.new(first_name:"fn3", last_name:"ln3", age:3, email:"em3@em.com");
 
-user4 = User.new(first_name:"fn4", last_name:"ln4", age:4, email:"em4@em.com")
+user4 = User.new(first_name:"fn4", last_name:"ln4", age:4, email:"em4@em.com");
+
+user5 = User.new(first_name:"fn5", last_name:"ln5", age:5, email:"em5@em.com");
+
+user5.new_record?;
+user5.valid$;
+user1.save;
+user2.save;
+user3.save;
+user4.save;
+
++++++++++++++++++++++++++++++++++++
+validation:
+
+<app_name>/app/models/user.rb
+
+class User < ActiveRecord::Base
+  validates :first_name, presence: true
+end
+
+Make sure you run reload! after updating and saving this file.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+user6=User.new
+user6.valid?
+user6.errors
+user6.errors.full_messages
+
+user6 = User.new(first_name:"fn6", last_name:"ln6", age:5, email:"em6@em.com");
+
+user6.valid?
+user6.errors
+user6.errors.full_messages
+user6.save
+
+User.all
+User.first
+User.last
+User.order()
+User.order(first_name: :asc
+
+User.find(3)
+
+
+userx = User.find(3);
+userx.last_name = 'Darpa';
+userx.save,
+
+User.find(4).destroy
+User.save
