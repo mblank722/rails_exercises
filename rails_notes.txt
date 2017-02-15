@@ -22,8 +22,35 @@ rails generate rails_footnotes:install
   if key: id's it as a key, can be used as key: value to associate a value
 
 +++++++++++++++++++++
+routes:
 
+Most Important Routes
+In the routes.rb (in the config folder), you can specify different rules to direct different HTTP requests to the appropriate controller/method.
 
+If you're going to follow the RESTful routes/rules, you can simply put something like below:
+
+resources :products
+
+++++++++++++++++++++++++++++
+controllers:
+
+To create a new controller, make sure you have a terminal window open and you are in the Rails project directory.
+
+rails generate controller [controller name here]
+Example: rails generate controller Comments
+
+This will generate an empty controller file. If you know what specific methods you want in the controller, you can enter them on the command line, and those methods will be automatically defined in the controller file that is generated. For example:
+
+rails generate controller [controller name here] [list of methods separated by space]
+Example: rails generate controller Comments index new edit
+
+Or simply...
+
+rails g controller [controller name here] [list of methods separated by space]
+Notice that the controller name is capitalized and plural, which is the convention for naming a controller.
+
++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++
 from bash/terminal (in iTerm) prompt:
 - create new rails project
 rails new user_login_project
