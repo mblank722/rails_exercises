@@ -26,7 +26,7 @@ gem 'rails-footnotes', '>= 4.0.0', '<5'
 bundle install
 (bundle show )GEM_NAME
 rails generate rails_footnotes:install
-+++++++++++++++++++++
+++++++++++++++++++++++
 # - separates class from method
 
 : - id key in dictionary /hash
