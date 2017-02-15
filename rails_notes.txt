@@ -21,6 +21,12 @@ add:  gem 'hirb' in Gemfile and save
 cd project folder
 install Hirb: bundle install
 
+additional gems:
+gem 'rails-footnotes', '>= 4.0.0', '<5'
+bundle install
+(bundle show )GEM_NAME
+rails generate rails_footnotes:install
+
 
 
 -start server in iTerm
