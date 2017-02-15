@@ -29,6 +29,8 @@ rails generate rails_footnotes:install
 +++++++++++++++++++++
 # - separates class from method
 
+: - id key in dictionary /hash
+
 +++++++++++++++++++++
 
 -start server in iTerm
