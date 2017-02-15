@@ -30,11 +30,15 @@ rails generate rails_footnotes:install
 # - separates class from method
 
 : - id key in dictionary /hash
+  if :key id's it as a key, can be used as :key => value to associate a value (hashrocket -  => )
+    or
+  if key: id's it as a key, can be used as key: value to associate a value
 
 +++++++++++++++++++++
 
 -start server in iTerm
 rails s
+
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 start new bash terminal session (in atom) and
 -create model:
