@@ -39,7 +39,7 @@ rails generate rails_footnotes:install
 -start server in iTerm
 rails s
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 start new bash terminal session (in atom) and
 -create model:
  rails g model User first_name:string last_name:string email:string age:integer
