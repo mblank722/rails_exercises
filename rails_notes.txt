@@ -27,6 +27,7 @@ bundle install
 (bundle show )GEM_NAME
 rails generate rails_footnotes:install
 +++++++++++++++++++++
+# - separates class from method
 
 +++++++++++++++++++++
 
