@@ -7,20 +7,7 @@ prior to .save of model instances:
 .new_record - if hasn't been saved
 
 +++++++++++++++++++++++++++++
-
-
-from bash/terminal (in iTerm) prompt:
-- create new rails project
-rails new user_login_project
-- cd into main project directory
-cd user_login_project
--open atom in current directory
-atom .
--add Hirb
-add:  gem 'hirb' in Gemfile and save
-cd project folder
-install Hirb: bundle install
-
+++++++++++++++++++++++
 additional gems:
 gem 'rails-footnotes', '>= 4.0.0', '<5'
 bundle install
@@ -35,6 +22,21 @@ rails generate rails_footnotes:install
   if key: id's it as a key, can be used as key: value to associate a value
 
 +++++++++++++++++++++
+
+
+from bash/terminal (in iTerm) prompt:
+- create new rails project
+rails new user_login_project
+- cd into main project directory
+cd user_login_project
+-open atom in current directory
+atom .
+-add Hirb
+add:  gem 'hirb' in Gemfile and save
+cd project folder
+install Hirb: bundle install
+
++++++++++++++++++++++++++++++++
 
 -start server in iTerm
 rails s
