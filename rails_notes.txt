@@ -49,7 +49,7 @@ Or simply...
 rails g controller [controller name here] [list of methods separated by space]
 Notice that the controller name is capitalized and plural, which is the convention for naming a controller.
 
-++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++
 from bash/terminal (in iTerm) prompt:
 - create new rails project
