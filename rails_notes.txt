@@ -59,7 +59,7 @@ cd user_login_project
 -open atom in current directory
 atom .
 -add Hirb
-add:  gem 'hirb' in Gemfile and save
+add:  gem 'hirb' in Gemfile and sav
 cd project folder
 install Hirb: bundle install
 
