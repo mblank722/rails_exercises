@@ -47,7 +47,7 @@ Example: rails generate controller Comments index new edit
 Or simply...
 
 rails g controller [controller name here] [list of methods separated by space]
-Notice that the controller name is capitalized and plural, which is th convention for naming a controller.
+Notice that the controller name is capitalized and plural, which is the convention for naming a controller.
 
 +++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++
