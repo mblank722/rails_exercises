@@ -61,7 +61,7 @@ atom .
 -add Hirb
 add:  gem 'hirb' in Gemfile and save
 cd project folder
-install Hirb: bundle install
+  install Hirb: bundle install
 
 +++++++++++++++++++++++++++++++
 
