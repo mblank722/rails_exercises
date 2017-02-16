@@ -60,6 +60,7 @@ cd user_login_project
 atom .
 -add Hirb
 add:  gem 'hirb' in Gemfile and save
+      gem "rails-footnotes"
 cd project folder
   install Hirb: bundle install
 
