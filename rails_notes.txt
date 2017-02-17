@@ -79,7 +79,7 @@ start new bash terminal session (in atom) and
 -start console  in iTerm : rails c
 
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 at console prompt:
 Hirb.enable
 
