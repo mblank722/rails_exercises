@@ -1,4 +1,12 @@
 General notes:
+
+Gems:
+- hirb
+- rails-footnotes
+
+
+
+
 after changes to DB: console: reload!
 
 prior to .save of model instances:
