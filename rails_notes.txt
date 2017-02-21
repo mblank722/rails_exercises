@@ -5,7 +5,11 @@ Gems:
 - rails-footnotes
 
 
+routes.rb:
 
+to automagically add RESTful routes:
+
+ resources :products
 
 after changes to DB: console: reload!
 
