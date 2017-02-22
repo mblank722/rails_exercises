@@ -1,6 +1,5 @@
 class TimeController < ApplicationController
   def index
-    session[:test] = "hello world"
-
+    params[:time] = Time.new
   end
 end
