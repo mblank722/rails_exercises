@@ -9,15 +9,20 @@ class UsersController < ApplicationController
   end
 
   def create
+    name=(0...25).map { ('a'..'z').to_a[rand(26)] }.join
+    render text: name
+    User.create(name: name)
   end
 
   def show
+  puts user=User.find(params[:id])
+    render json: user
   end
 
   def update
   end
 
   def total
-    render text:"there#{session[:count]} users in the User Table"
+    render plain:"there are #{session[:count]} users in the User Table"
   end
 end

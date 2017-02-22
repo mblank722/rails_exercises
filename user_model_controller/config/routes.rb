@@ -8,9 +8,10 @@ Rails.application.routes.draw do
 
   get '/users/create' => 'users#create'
 
+  get '/users/total' => 'users#total'
+
   get '/users/:id' => 'users#show'
 
   get '/users/:id/edit' => 'users#update'
 
-  get '/users/total' => 'users#total'
 end
