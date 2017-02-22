@@ -156,3 +156,14 @@ userx.save,
 
 User.find(4).destroy
 User.save
+
+
+========================================================
+
+Controllers-Fro Helpers:
+
+
+<form method='post'>
+    <input type="hidden"name="_method"value="patch">
+</form>
+Copy

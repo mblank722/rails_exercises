@@ -21,6 +21,10 @@ class UsersController < ApplicationController
 
   def update
     user=User.find(params[:id])
+    params[:id] = user[:id]
+    params[:name] = user[:name]
+    params[:created_at] = user[:created_at]
+    params[:updated_at] = user[:updated_at]
     #puts user[:id]
     #render json: user
     render 'create.html.erb'
