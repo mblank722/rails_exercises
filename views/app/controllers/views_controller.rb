@@ -4,7 +4,7 @@ class ViewsController < ApplicationController
   end
 
   def hello
-    render text: 'Hello Coding Dojo'
+    render text: 'Hello CodingDojo!'
   end
 
 
@@ -18,7 +18,7 @@ class ViewsController < ApplicationController
   def say_hello
     render text: 'Saying Hello!'
   end
-  
+
   def count
   end
 
