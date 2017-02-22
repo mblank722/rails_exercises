@@ -31,7 +31,7 @@ class ViewsController < ApplicationController
   end
 
   def restart
-    session[:id] = nil
+    session[:count] = nil
     render text: 'Destroyed the session!'
 
 
