@@ -15,14 +15,18 @@ class UsersController < ApplicationController
   end
 
   def show
-  puts user=User.find(params[:id])
+    user=User.find(params[:id])
     render json: user
   end
 
   def update
+    user=User.find(params[:id])
+    render json: user
+    # render 'create.html.erb'
   end
 
   def total
-    render plain:"there are #{session[:count]} users in the User Table"
+
+    render plain:"there are #{User.count} users in the User Table"
   end
 end
