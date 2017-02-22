@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   end
 
   def new
+    render new.html.erb
   end
 
   def create
