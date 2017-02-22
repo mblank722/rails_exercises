@@ -160,7 +160,7 @@ User.save
 
 ========================================================
 
-Controllers-Fro Helpers:
+Controllers-Form Helpers:
 
 
 <form method='post'>
