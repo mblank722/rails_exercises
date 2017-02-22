@@ -21,8 +21,9 @@ class UsersController < ApplicationController
 
   def update
     user=User.find(params[:id])
-    render json: user
-    # render 'create.html.erb'
+    #puts user[:id]
+    #render json: user
+    render 'create.html.erb'
   end
 
   def total
