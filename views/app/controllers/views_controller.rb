@@ -20,15 +20,20 @@ class ViewsController < ApplicationController
   end
 
   def count
-    if session.has_key?(:count)
+    puts session
+    if !session.has_key?(:count)
       session[:count] = 1
-      render text "this is the first time you are here!"
+      #render text: "this is the first time you are here!"
     else
       session[:count] += 1
     end
-    render text "you have been here #{session[:count]} times before"
+    render text: "you have been here #{session[:count]} time(s) before"
   end
 
-  def raze
+  def restart
+    session[:id] = nil
+    render text: 'Destroyed the session!'
+
+
   end
 end

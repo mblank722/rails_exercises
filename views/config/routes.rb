@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   get '/times' => 'views#count'
 
-  get 'views/raze'
+  get '/times/restart' => 'views#restart'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
