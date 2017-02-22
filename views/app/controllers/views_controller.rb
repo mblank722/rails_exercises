@@ -19,14 +19,14 @@ class ViewsController < ApplicationController
     render text: 'Saying Hello!'
   end
 
-  def times
-    if !@times
-      @times = 1
+  def count
+    if !@count
+      @count = 1
       render text "this is the first time you are here!"
     else
-      @times += 1
+      @count += 1
     end
-    render text 'you have been here %{@times} times before"
+    render text "you have been here %{@times} times before"
   end
 
   def raze
