@@ -20,13 +20,13 @@ class ViewsController < ApplicationController
   end
 
   def count
-    if !@count
-      @count = 1
+    if session.has_key?(:count)
+      session[:count] = 1
       render text "this is the first time you are here!"
     else
-      @count = @count + 1
+      session[:count] += 1
     end
-    render text "you have been here %{@count} times before"
+    render text "you have been here #{session[:count]} times before"
   end
 
   def raze
