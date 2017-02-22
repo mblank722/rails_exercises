@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   get 'hello' => 'views#hello'
 
-  get '/count' => 'views#times'
+  get '/times' => 'views#count'
 
   get 'views/raze'
 

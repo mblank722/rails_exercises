@@ -24,9 +24,9 @@ class ViewsController < ApplicationController
       @count = 1
       render text "this is the first time you are here!"
     else
-      @count += 1
+      @count = @count + 1
     end
-    render text "you have been here %{@times} times before"
+    render text "you have been here %{@count} times before"
   end
 
   def raze
