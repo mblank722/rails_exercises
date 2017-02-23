@@ -4,5 +4,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    params
+    render json: params
   end
 end
