@@ -1,6 +1,7 @@
 <h1>Survey Form</h1>
 
-<form action="/" method="get">
+<form action="/result" method="get">
+   <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
   <p>
     Your Name:
     <input type="text" name="name">
@@ -36,5 +37,5 @@
 
     </textarea>
   </p>
-  <input type="submit" value="Submit" name="show">
+  <input type="submit" value="Submit">
 </form>
