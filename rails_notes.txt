@@ -3,7 +3,7 @@ General notes:
 Gems:
 - hirb
 - rails-footnotes
-
+ 
 
 routes.rb:
 
