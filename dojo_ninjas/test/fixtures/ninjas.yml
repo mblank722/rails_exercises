@@ -4,8 +4,10 @@ one:
   dojo_id: 1
   first_name: MyString
   last_name: MyString
+  dojo: one
 
 two:
   dojo_id: 1
   first_name: MyString
   last_name: MyString
+  dojo: two

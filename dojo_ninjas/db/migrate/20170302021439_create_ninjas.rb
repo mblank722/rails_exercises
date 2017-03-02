@@ -4,6 +4,7 @@ class CreateNinjas < ActiveRecord::Migration[5.0]
       t.integer :dojo_id
       t.string :first_name
       t.string :last_name
+      t.references :dojo, foreign_key: true
 
       t.timestamps
     end
