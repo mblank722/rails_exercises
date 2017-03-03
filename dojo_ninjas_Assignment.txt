@@ -1,0 +1,26 @@
+q1:rails new dojo_ninja
+
+q2: rails g model Dojo name:string city:string state:string
+rails g model Ninja dojo_id:integer first_name:string last_name:string dojo:references
+
+q4 and q5 : in model/dojo.rb:
+validates :name, :city, :state, presence: true
+validates :state, length: {is: 2}
+has_many :ninjas
+
+in model/ninja.rb:
+validates :first_name, :last_name, presence: true
+belongs_to :dojo
+
+
+
+q3: Dojo.create(name:'asdf', city":'arsdf', state:'XX')
+
+ninja1=Ninja
+
+Dojo.find(x).destroy or Dojo.destroy_all
+
+q7: Dojo.(2).ninjas
+Dojo.find(2).ninjas
+
+q8:  Dojo.find(2).ninjas.select(:first_name).order(created_at: :desc)

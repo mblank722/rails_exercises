@@ -1,9 +1,16 @@
 General notes:
 
+MOdels:
+person = Person.new
+person.validate!            # => ["cannot be nil"]
+person.errors.full_messages # => ["name cannot be nil"]
+# etc..
+
+
 Gems:
 - hirb
 - rails-footnotes
- 
+
 
 routes.rb:
 
