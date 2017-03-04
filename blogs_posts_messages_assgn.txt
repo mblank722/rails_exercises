@@ -1,0 +1,50 @@
+q 1, 2 and 3:
+
+class Blog < ApplicationRecord
+  validates :name, :description, presence: true
+
+  has_many :posts
+  has_many :messages, through: :posts
+end
+
+class Post < ApplicationRecord
+  validates :title, :content, presence: true
+  validates :title, length:{minimum: 7}
+  belongs_to :blog
+  has_many :messages
+end
+
+class Message < ApplicationRecord
+  validates :author, :message, presence: true
+  validates :message, length:{minimum: 15}
+  belongs_to :post
+end
+================================
+
+q1: Blog.create(name:"n1", description: "d1") times 3
+
+q2: Post.create(title:"title07", content:"c7", blog:Blog.find(3)
+NB:Do NOT reference foreign key. In stead see above third field
+
+NB: validations must pass, id's must be integer
+
+q3: Message.create(post:Post.find(1), author:"a8", message: "messagemessage08")
+NB:Do NOT reference foreign key. In stead see above first field
+
+q4: Blog.first.posts
+
+q5:Blog.last.posts.order(title: :desc)
+
+q6: Post.first.update(title: "title01a")
+
+q7:
+1) add to Post model: has_many :messages,
+ :dependent => delete_all
+2) In rails console:
+  Post.find(3).destroy
+
+q8:
+Post.find(3).destroy
+
+q9:
+Blog.where('id<5')
