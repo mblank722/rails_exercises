@@ -1,3 +1,5 @@
 class Message < ApplicationRecord
-  belongs_to :post
+  validates :author, :message, presence: true
+  validates :message, lenght:{:minimum 15}
+  belongs_to: post
 end
